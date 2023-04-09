@@ -653,7 +653,6 @@ It is realized that the values at the Sector column and the HeadQuarter column h
 <img width="936" alt="Screen Shot 2023-04-09 at 13 02 30" src="https://user-images.githubusercontent.com/115732734/230769109-6c3f4024-fe48-4d08-94f4-d266d6f5fda1.png">
 
 
-------------
 
 
 # Checking for the record with Computer Games
@@ -766,7 +765,7 @@ It also revealed that the amount and stage column has been interchanged.
 <img width="936" alt="Screen Shot 2023-04-09 at 14 16 34" src="https://user-images.githubusercontent.com/115732734/230772168-323e39a6-1ba3-4172-9295-0760125ec5f7.png">
 
 
------
+
 
 # Cleaning the Amount($) Column
 
@@ -909,6 +908,57 @@ This is correcetd in the code below.
 
 
 # Cleaned 2021 data.
+
+<img width="937" alt="Screen Shot 2023-04-09 at 16 47 58" src="https://user-images.githubusercontent.com/115732734/230779731-654ed445-c2d9-4776-bee6-6a107d02e9da.png">
+
+<br>
+
+
+
+## Combining the Various Data Sets 2018, 2019, 2020, 2021 into one
+
+### Creating a variable to hold the different dataframes
+
+### Concatenating the varibale holding the various dataframes
+
+<img width="935" alt="Screen Shot 2023-04-09 at 16 51 37" src="https://user-images.githubusercontent.com/115732734/230780633-1729e388-f011-4b83-8c0d-6d46e4ca0196.png">
+
+<br>
+
+<img width="937" alt="Screen Shot 2023-04-09 at 16 56 12" src="https://user-images.githubusercontent.com/115732734/230780652-919011ca-719a-4704-9db6-27e283d341d9.png">
+
+# Using .shape()
+
+<img width="936" alt="Screen Shot 2023-04-09 at 16 57 01" src="https://user-images.githubusercontent.com/115732734/230780678-e535a6d0-47f6-43c9-b459-c571c8d609da.png">
+
+<br>
+
+## Saving the combined data set as a new file and reloading it for analysis
+
+saving the new dataframe after concatenation in order to have it work on it without having to change the other datasets
+
+<img width="934" alt="Screen Shot 2023-04-09 at 16 59 42" src="https://user-images.githubusercontent.com/115732734/230780705-80753e19-a453-49c2-a33e-f5707040422a.png">
+
+<br>
+
+<img width="937" alt="Screen Shot 2023-04-09 at 17 00 26" src="https://user-images.githubusercontent.com/115732734/230780731-acd1077a-9a3f-44fb-bdd5-5e06028bccbd.png">
+
+
+
+<br>
+
+
+# Exploratory Data Analysis (EDA)
+
+
+# dropping unwanted column
+
+
+
+
+
+
+
 
 
 
