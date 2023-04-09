@@ -1117,8 +1117,81 @@ The graph shows that only a few start up from 2012 and beyond have received enou
 <img width="938" alt="Screen Shot 2023-04-09 at 19 07 01" src="https://user-images.githubusercontent.com/115732734/230786472-39bcb2b8-09df-4060-b590-d16e319b7fdd.png">
 
 
+<br>
 
 
+# Answering The Business Questions
+
+
+## Question 1. Does the sort of industry have an impact on funding success?
+
+
+#### Group the DataFrame by the 'sector' column and count the occurrences of each stage.
+
+<img width="835" alt="Screen Shot 2023-04-09 at 19 19 32" src="https://user-images.githubusercontent.com/115732734/230787490-2349c7e8-376d-4ff4-b381-3113e3da16c9.png">
+
+The two graph above confirms that the the sector or industry of the start-up can influence the funding it receives. Other varibales like the stage of the start-up might come to play. However, the sector affects the amount of funding received.
+
+The first graph which showed the top 10 indicates that most of the funding were received in technology dominated sectors. The second graph which show the bottom 10. indicates less difference in the sectors as most of them received similar funding.
+
+<img width="774" alt="Screen Shot 2023-04-09 at 19 36 46" src="https://user-images.githubusercontent.com/115732734/230788006-49b421d7-2eb9-475b-8be9-a795e49de572.png">
+
+<br>
+
+
+<img width="780" alt="Screen Shot 2023-04-09 at 19 40 01" src="https://user-images.githubusercontent.com/115732734/230788012-efe660b1-f82b-43b3-b5e8-cbde299d3a4a.png">
+
+
+
+#### Question 2. Can the success of obtaining finance from investors be impacted by location?
+
+
+##### Group the DataFrame by the 'headquater' column and count the occurrences of each stage.
+
+
+<img width="831" alt="Screen Shot 2023-04-09 at 19 23 25" src="https://user-images.githubusercontent.com/115732734/230787502-85c829f7-c6c1-4631-8ad2-1910bd2e616d.png">
+
+
+
+The graph supports the notion that the location of the start up can affect its funding.
+
+
+<img width="1042" alt="Screen Shot 2023-04-09 at 19 43 34" src="https://user-images.githubusercontent.com/115732734/230788550-bf8e7d20-aefc-4ac9-9859-6668002f0c90.png">
+
+## Question 3. Which stage receives more investment from investors for start-ups?
+
+
+##### Group the DataFrame by the 'Stage' column and count the occurrences of each stage.
+
+<img width="783" alt="Screen Shot 2023-04-09 at 19 26 11" src="https://user-images.githubusercontent.com/115732734/230787513-3a1385c7-47b5-409a-961f-3e688a06429c.png">
+
+<br>
+
+<img width="931" alt="Screen Shot 2023-04-09 at 19 45 03" src="https://user-images.githubusercontent.com/115732734/230788556-ffdc6c11-9753-4b81-9498-c79cf4e95408.png">
+
+
+
+## Question 4. Who makes the biggest investments among investors?
+
+<img width="937" alt="Screen Shot 2023-04-09 at 19 27 28" src="https://user-images.githubusercontent.com/115732734/230787522-a90a3ea7-2f21-4184-93f8-8321cbb220ff.png">
+
+<br>
+
+
+<img width="1025" alt="Screen Shot 2023-04-09 at 19 46 30" src="https://user-images.githubusercontent.com/115732734/230788558-7c51f29b-7eb2-4d61-9872-90c23edc4b06.png">
+
+
+
+#### Question 5. Can the startup's Year of founding affect the Amount of funding it receives from investors?
+
+<img width="935" alt="Screen Shot 2023-04-09 at 19 28 46" src="https://user-images.githubusercontent.com/115732734/230787526-f52c180d-b1d5-4ae5-8c06-341d15729f34.png">
+
+Year founded was on a sinificant rise in 2019 after years of fluctuating runs. However it to a sharp decline in 2019 and re sparked in 2020. Again 2021 missed out on the top 10 as it was on a heavy decline
+
+
+<br>
+
+<img width="1041" alt="Screen Shot 2023-04-09 at 19 47 17" src="https://user-images.githubusercontent.com/115732734/230788571-413bd28d-4d74-4b12-93f9-0bc02eadad14.png">
 
 
 
