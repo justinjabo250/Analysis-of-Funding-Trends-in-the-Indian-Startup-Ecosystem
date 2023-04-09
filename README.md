@@ -1059,22 +1059,62 @@ Since there are about 90 different sectors, it will not be ideal to represent th
 <img width="938" alt="Screen Shot 2023-04-09 at 18 24 05" src="https://user-images.githubusercontent.com/115732734/230784746-9affd44a-9e9d-4deb-b937-d62a25fcca73.png">
 
 
+<br>
+
+
+# Multivariate Analysis
+
+
+## Analysis of the Founded and Amount($) Columns
+
+##### Group the DataFrame by the 'Stage' column and count the occurrences of each stage
+
+
+<img width="935" alt="Screen Shot 2023-04-09 at 18 46 32" src="https://user-images.githubusercontent.com/115732734/230785697-a54c5a6f-cd15-4ff1-a496-d295f6443d1c.png">
+
+
+<br>
+
+
+<img width="931" alt="Screen Shot 2023-04-09 at 18 48 52" src="https://user-images.githubusercontent.com/115732734/230785706-ac9b9a30-0c5f-40f3-a6f4-dba1e21821b9.png">
+
+
+<br>
+
+The graph shows that only a few start up from 2012 and beyond have received enough funding. Again the funding for start-up took a marginal increase since 2012 and has since be on a stable rise
+
+<br>
+
+<img width="942" alt="Screen Shot 2023-04-09 at 18 49 28" src="https://user-images.githubusercontent.com/115732734/230785720-e3c24a01-2047-4f8b-a6ec-0de9a46d70d0.png">
+
+
+# Analysis of the Amount($) and the Founded Column
 
 
 
+##### The regression graph indicated a weak and negative relationship between year of funding and amount of funding
+
+<img width="938" alt="Screen Shot 2023-04-09 at 18 58 42" src="https://user-images.githubusercontent.com/115732734/230786146-b87f1cd3-4dc9-461a-b79d-19f973a198e5.png">
 
 
 
+# correlation
+
+<img width="936" alt="Screen Shot 2023-04-09 at 18 59 15" src="https://user-images.githubusercontent.com/115732734/230786150-50cb4997-8563-46ba-9a61-81392f4132ed.png">
+
+
+# Analysis of Stage and Founded Column
+
+###### It is observed that the seed stage has more spread across the various years as compared to the other stages. They are clustered between 2010 and 2021
+
+
+<img width="938" alt="Screen Shot 2023-04-09 at 19 04 20 1" src="https://user-images.githubusercontent.com/115732734/230786463-60880a50-93f0-4786-a470-611d160d4b8a.png">
 
 
 
+# Analysis of all other Numeric Columns
 
-
-
-
-
-
-
+<img width="938" alt="Screen Shot 2023-04-09 at 19 07 01" src="https://user-images.githubusercontent.com/115732734/230786472-39bcb2b8-09df-4060-b590-d16e319b7fdd.png">
 
 
 
