@@ -250,7 +250,7 @@ Duty is to select all rows where 'Amount' column is in rupees.
 
 
 
-<br>
+<br><br>
 
 # Analysis Of The 2019 Data.
 
@@ -354,7 +354,7 @@ Duty is to select all rows where 'Amount' column is in rupees.
 <img width="1031" alt="Screen Shot 2023-04-09 at 01 56 06" src="https://user-images.githubusercontent.com/115732734/230747383-e93ce38a-4733-4c53-84af-a84235eebf59.png">
 
 <br>
-
+</br>
 
 # Analysis Of The 2020 Data.
 
@@ -373,18 +373,170 @@ Duty is to select all rows where 'Amount' column is in rupees.
 
 
 
+-----------
+
+
+# Using .info() function
+
+
+###### The info() method prints information about the DataFrame. The information contains the number of columns, column labels, column data types, memory usage, range index, and the number of cells in each column (non-null values). 
+
+<img width="1044" alt="Screen Shot 2023-04-09 at 02 24 12" src="https://user-images.githubusercontent.com/115732734/230748153-1a33b560-e39f-4487-a5fa-e9e3d671ac9f.png">
+
+
+# To see the names of the columns in the dataset.
+
+<img width="935" alt="Screen Shot 2023-04-09 at 02 37 54" src="https://user-images.githubusercontent.com/115732734/230748401-cf735d79-b0b6-4d1f-ad67-d4a4e8f8df9b.png">
+
+
+# Using dfSummary()
+
+##### A summary of the entire dataset. To create an organised and thorough summary of a dataframe, use dfsummary:
+
+<img width="1041" alt="Screen Shot 2023-04-09 at 02 25 03" src="https://user-images.githubusercontent.com/115732734/230748259-619f6daf-b35d-4773-aab7-935fc246ef05.png">
+
+
+# Using isnull() Method.
+
+##### The isnull() method returns a DataFrame object where all the values are replaced with a Boolean value True for NULL values, and otherwise False.
+
+
+<img width="937" alt="Screen Shot 2023-04-09 at 02 26 08" src="https://user-images.githubusercontent.com/115732734/230748223-8e839b85-5e2c-48c4-9dbb-a82ce530b300.png">
 
 
 
+# Deep Dive Into the Data Set :
+
+
+<img width="936" alt="Screen Shot 2023-04-09 at 02 27 22" src="https://user-images.githubusercontent.com/115732734/230748241-0e4eb972-78c2-4ee0-95a7-c6fde092975b.png">
+
+
+## Replacing all record with unknown dates with 2020
+
+<img width="936" alt="Screen Shot 2023-04-09 at 02 28 08" src="https://user-images.githubusercontent.com/115732734/230748282-418d1dac-2f32-4666-a490-9a6f69f3851a.png">
+
+
+# Cleaning the HeadQuarter Column.
+
+<img width="1038" alt="Screen Shot 2023-04-09 at 02 41 38" src="https://user-images.githubusercontent.com/115732734/230748633-8566021b-7ed6-4cfe-ae72-f147ddc672a7.png">
+
+
+# Strip and select only the City name.
+
+<img width="937" alt="Screen Shot 2023-04-09 at 02 42 15" src="https://user-images.githubusercontent.com/115732734/230748635-2fd124a1-44c3-4464-9745-b5f44102fd99.png">
+
+
+# Replacing wrongly spelt names and similar names.
+
+<img width="939" alt="Screen Shot 2023-04-09 at 02 43 03" src="https://user-images.githubusercontent.com/115732734/230748639-82ef3b6a-4553-4ccf-bdeb-0dd870bdbf1d.png">
+
+
+# Cleaning the Sector Column.
+
+<img width="1027" alt="Screen Shot 2023-04-09 at 02 44 00" src="https://user-images.githubusercontent.com/115732734/230748641-2c46111d-b0ed-44af-bfb1-91f6d7bba1fe.png">
 
 
 
+# Rename similar sectors with wrong or different spelling.
+
+<img width="937" alt="Screen Shot 2023-04-09 at 03 00 08" src="https://user-images.githubusercontent.com/115732734/230748962-2b39aba4-b183-4a46-85bd-48c0dcb8b001.png">
+
+# . Unique(). Methode
+
+<img width="938" alt="Screen Shot 2023-04-09 at 02 53 04" src="https://user-images.githubusercontent.com/115732734/230748957-216bdd3d-ffa7-4a32-994e-82ea3d3e0d87.png">
+
+
+# Cleaning the Amount($) Column.
+
+
+### Changing the data type to a string.
+
+<img width="936" alt="Screen Shot 2023-04-09 at 03 11 00" src="https://user-images.githubusercontent.com/115732734/230749390-581bb692-e32a-42b9-9432-d0c6e40ec0ee.png">
 
 
 
+# Retrieveing records with 'Undiclsosed'
+
+<img width="937" alt="Screen Shot 2023-04-09 at 03 11 37" src="https://user-images.githubusercontent.com/115732734/230749395-7e2109f4-4586-44bd-9014-179ebbdb179d.png">
+
+
+# Correcting the name of the Amount($) from 'Undiclsosed' to 0
+
+<img width="935" alt="Screen Shot 2023-04-09 at 03 12 39" src="https://user-images.githubusercontent.com/115732734/230749406-14e34e7b-c5f6-470d-b74d-9f2d0b38d4a7.png">
+
+
+# Retrieveing records with Undislosed.
+
+<img width="939" alt="Screen Shot 2023-04-09 at 03 13 43" src="https://user-images.githubusercontent.com/115732734/230749408-61727812-4a6b-4cd3-bb0c-6e5140ab11a8.png">
 
 
 
+# Correcting the name of the Amount($) from Undislosed to 0
+
+<img width="932" alt="Screen Shot 2023-04-09 at 03 25 57" src="https://user-images.githubusercontent.com/115732734/230749597-e6d3f671-ef28-49dd-8539-9de3a6757d65.png">
+
+# Retrieveing records with Undisclosed.
+
+<img width="939" alt="Screen Shot 2023-04-09 at 03 26 36" src="https://user-images.githubusercontent.com/115732734/230749599-bdffb892-3b18-472e-a03d-2f32f25971de.png">
+
+# Replacing all Undisclosed.
+
+<img width="934" alt="Screen Shot 2023-04-09 at 03 33 34" src="https://user-images.githubusercontent.com/115732734/230749836-00be8197-343e-4256-8a77-e08de39918b2.png">
+
+# Replacing all 'nan' with 0
+
+<img width="930" alt="Screen Shot 2023-04-09 at 03 34 20" src="https://user-images.githubusercontent.com/115732734/230749838-8c04eef9-2e16-4089-8de6-86e5fd868390.png">
+
+
+# Removing all special characters.
+
+<img width="939" alt="Screen Shot 2023-04-09 at 03 34 55" src="https://user-images.githubusercontent.com/115732734/230749841-cde8aba8-c25b-4f3d-a16b-7baef07dc948.png">
+
+# Change the data type to a float.
+
+<img width="935" alt="Screen Shot 2023-04-09 at 03 35 52" src="https://user-images.githubusercontent.com/115732734/230749843-8a7a9d47-e2e9-4836-91e3-367552f39835.png">
+
+
+# Cleaning the Stage Column.
+
+<img width="934" alt="Screen Shot 2023-04-09 at 03 41 21" src="https://user-images.githubusercontent.com/115732734/230750008-71717300-52be-4d0a-ab57-e46f6aa55d52.png">
+
+
+# Replacing wrongly spelt and similar enteries.
+
+<img width="936" alt="Screen Shot 2023-04-09 at 03 42 18" src="https://user-images.githubusercontent.com/115732734/230750013-c3bcbcaa-4c77-41f6-83d1-27f76a9c3551.png">
+
+
+# Replacing all 'nan' with Unknown.
+
+<img width="932" alt="Screen Shot 2023-04-09 at 03 43 00" src="https://user-images.githubusercontent.com/115732734/230750017-43a7cb17-3c63-4c8b-b315-07971d45eb61.png">
+
+
+# Cleaning the Investor Column.
+
+
+## All nan values are to be filled with unknown.
+
+<img width="938" alt="Screen Shot 2023-04-09 at 03 48 17" src="https://user-images.githubusercontent.com/115732734/230750214-b9821afe-08a1-4b2e-92aa-b85ed49069a3.png">
+
+
+# Checking for duplicate entries.
+
+<img width="933" alt="Screen Shot 2023-04-09 at 03 49 07" src="https://user-images.githubusercontent.com/115732734/230750217-8f446fe4-b803-4e96-b519-5981a6b0779c.png">
+
+
+# Remove the duplicate record.
+
+<img width="938" alt="Screen Shot 2023-04-09 at 03 49 49" src="https://user-images.githubusercontent.com/115732734/230750221-353c7bb6-8f1a-4534-83df-62f683ba28e7.png">
+
+
+
+# Cleaned 2020 data.
+
+<img width="935" alt="Screen Shot 2023-04-09 at 03 50 36" src="https://user-images.githubusercontent.com/115732734/230750229-1db2d35f-1334-49cb-9804-622c0248128c.png">
+
+
+------------
 
 
 
