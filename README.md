@@ -538,13 +538,377 @@ Duty is to select all rows where 'Amount' column is in rupees.
 
 ------------
 
+# Analysis Of The 2021 Data
+
+
+# Column names and description: For the year 2021 :
+
+<img width="938" alt="Screen Shot 2023-04-09 at 12 21 01" src="https://user-images.githubusercontent.com/115732734/230767434-1b92d237-15b2-48de-b0a8-c933a511839c.png">
+
+
+# 2021 Dataset.
+
+<img width="1040" alt="Screen Shot 2023-04-09 at 12 20 13" src="https://user-images.githubusercontent.com/115732734/230767443-09a60260-9ff3-4716-a370-ec456a2b67f7.png">
+
+-----------
+
+# Using .info() function
+
+
+###### The info() method prints information about the DataFrame. The information contains the number of columns, column labels, column data types, memory usage, range index, and the number of cells in each column (non-null values). 
+
+<img width="939" alt="Screen Shot 2023-04-09 at 12 28 02" src="https://user-images.githubusercontent.com/115732734/230767807-64c41cba-3463-41b6-8abe-1ebd6d7492e0.png">
+
+
+# To see the names of the columns in the dataset.
+
+<img width="936" alt="Screen Shot 2023-04-09 at 12 28 59" src="https://user-images.githubusercontent.com/115732734/230767818-28ef40e8-c549-47fe-a780-b591094a51d7.png">
+
+
+# Using dfSummary()
+
+##### A summary of the entire dataset. To create an organised and thorough summary of a dataframe, use dfsummary:
+
+<img width="934" alt="Screen Shot 2023-04-09 at 12 29 55" src="https://user-images.githubusercontent.com/115732734/230767836-a630faa4-da4d-4e7a-9c7f-6bdb7e1c5d9c.png">
+
+
+# Using isnull() Method.
+
+##### The isnull() method returns a DataFrame object where all the values are replaced with a Boolean value True for NULL values, and otherwise False.
+
+
+<img width="937" alt="Screen Shot 2023-04-09 at 02 26 08" src="https://user-images.githubusercontent.com/115732734/230748223-8e839b85-5e2c-48c4-9dbb-a82ce530b300.png">
+
+
+# Deep Dive Into the Data Set :
+
+## Cleaning the Founded Column:
+
+<img width="934" alt="Screen Shot 2023-04-09 at 12 32 36" src="https://user-images.githubusercontent.com/115732734/230767855-f35308c3-5d18-4ccc-bbee-b715164b62a4.png">
+
+
+# Convert the data type from float to a string.
+
+<img width="936" alt="Screen Shot 2023-04-09 at 12 42 34" src="https://user-images.githubusercontent.com/115732734/230768344-0bf4ab4c-180f-4b99-9e85-604a188902ee.png">
+
+
+# Changing the data type to numeric.
+
+<img width="935" alt="Screen Shot 2023-04-09 at 12 43 21" src="https://user-images.githubusercontent.com/115732734/230768352-efe937b1-3bba-418a-92bd-48a731c2508c.png">
+
+
+# Replacing nan with 2021
+
+<img width="934" alt="Screen Shot 2023-04-09 at 12 44 11" src="https://user-images.githubusercontent.com/115732734/230768358-dd2819d1-d083-4aa9-aac0-3831795f6631.png">
+
+
+# Cleaning the HeadQuarter Column
+
+<img width="937" alt="Screen Shot 2023-04-09 at 12 45 04" src="https://user-images.githubusercontent.com/115732734/230768361-b15583d2-f29f-4e48-ae12-276b64b0cfdb.png">
+
+## checking for the record with Information Technology & Services.
+
+It is realized that the values at the Sector column and the HeadQuarter column has been interchanged. This is corrected in the cell below.
+
+
+<img width="933" alt="Screen Shot 2023-04-09 at 12 46 05" src="https://user-images.githubusercontent.com/115732734/230768373-acc4d623-3f6c-464f-944d-4b6b08e520c8.png">
+
+
+## Correcting the wrong placement of the HeadQuarter and Sector values
+
+<img width="936" alt="Screen Shot 2023-04-09 at 12 55 28" src="https://user-images.githubusercontent.com/115732734/230769060-ea1fae27-3c44-40e6-aca1-e149fee3f568.png">
+
+
+# Checking for the record with Online Media\t#REF!
+
+<img width="938" alt="Screen Shot 2023-04-09 at 12 56 18" src="https://user-images.githubusercontent.com/115732734/230769071-ecde706e-8661-449d-828e-b6d8be0bbd86.png">
+
+
+## Correcting the wrong placement of the HeadQuarter and Sector values:
+
+<img width="937" alt="Screen Shot 2023-04-09 at 12 58 43" src="https://user-images.githubusercontent.com/115732734/230769083-f9667616-bfcb-4532-af51-2ffa4f4cd594.png">
+
+
+
+# Checking for the record with Gurugram\t#REF
+
+<img width="934" alt="Screen Shot 2023-04-09 at 13 00 04" src="https://user-images.githubusercontent.com/115732734/230769092-432e1f98-49f5-473f-bf07-bd4458177d45.png">
+
+
+
+## Correcting the wrong placement of the HeadQuarter and Sector values
+
+<img width="936" alt="Screen Shot 2023-04-09 at 13 00 53" src="https://user-images.githubusercontent.com/115732734/230769098-005ad45d-0e36-4b48-9423-3e5459bc99dd.png">
+
+
+
+# Checking for the record with Food & Beverages
+
+<img width="935" alt="Screen Shot 2023-04-09 at 13 01 52" src="https://user-images.githubusercontent.com/115732734/230769106-90164be4-9f9c-4b42-b922-e51fa40d1291.png">
+
+
+
+# dropping the duplicate:
+
+<img width="936" alt="Screen Shot 2023-04-09 at 13 02 30" src="https://user-images.githubusercontent.com/115732734/230769109-6c3f4024-fe48-4d08-94f4-d266d6f5fda1.png">
+
+
+------------
+
+
+# Checking for the record with Computer Games
+
+This investigation also revealed a duplicated entry. The second entry with index 111 will be dropped and then the correction will be done.
+
+It also revealed that the amount and stage column has been interchanged.
+
+<img width="934" alt="Screen Shot 2023-04-09 at 13 24 13" src="https://user-images.githubusercontent.com/115732734/230770180-3af33a0c-eb7a-4743-b085-d6930d84a851.png">
+
+
+
+# Dropping the duplicate
+
+<img width="938" alt="Screen Shot 2023-04-09 at 13 25 24" src="https://user-images.githubusercontent.com/115732734/230770190-0ec663bd-45b9-44f9-97f8-fd95a126570e.png">
+
+
+# Checking for the record with Pharmaceuticals\t#REF!
+
+<img width="937" alt="Screen Shot 2023-04-09 at 13 26 08" src="https://user-images.githubusercontent.com/115732734/230770201-2d8e7228-64ed-47cb-8e25-b6582d8a416c.png">
+
+
+# Dropping the duplicate
+
+<img width="933" alt="Screen Shot 2023-04-09 at 13 27 03" src="https://user-images.githubusercontent.com/115732734/230770216-ea3e193b-3182-4a01-bdeb-73fe2cccc78b.png">
+
+
+# Replacing HeadQuarter with cleaned City name
+
+<img width="936" alt="Screen Shot 2023-04-09 at 13 28 08" src="https://user-images.githubusercontent.com/115732734/230770226-49d67683-31cd-4d19-9612-a20554022cc0.png">
 
 
 
 
+# Cleaning the Sector Column
+
+<img width="938" alt="Screen Shot 2023-04-09 at 13 40 04" src="https://user-images.githubusercontent.com/115732734/230770734-f0853db9-c0b8-4999-94ee-b7a74f70dfcc.png">
+
+
+## Rename similar sectors with wrong or different spelling
+
+<img width="937" alt="Screen Shot 2023-04-09 at 13 41 06" src="https://user-images.githubusercontent.com/115732734/230770743-1bf4edc3-d960-434c-86cc-7bb788e8c83b.png">
+
+
+# Using .unique()
+
+<img width="937" alt="Screen Shot 2023-04-09 at 13 41 53" src="https://user-images.githubusercontent.com/115732734/230770748-154a7df4-44cc-40f8-9e75-d3bc500b7d06.png">
+
+
+# Replacing nan with unknown
+
+<img width="940" alt="Screen Shot 2023-04-09 at 13 42 46" src="https://user-images.githubusercontent.com/115732734/230770759-b33f0602-f0f0-46cd-9757-c24e35c1bb4e.png">
 
 
 
+# Cleaning the Stage Column
+
+<img width="935" alt="Screen Shot 2023-04-09 at 13 52 09" src="https://user-images.githubusercontent.com/115732734/230771477-566b4b52-b28b-45dc-a06b-229665e89fb5.png">
+
+
+# Rename similar Stage with wrong or different spelling
+
+<img width="938" alt="Screen Shot 2023-04-09 at 13 53 18" src="https://user-images.githubusercontent.com/115732734/230771488-13a84478-6185-44d6-bdd8-5c105225130d.png">
+
+
+# Using .unique()
+
+<img width="935" alt="Screen Shot 2023-04-09 at 13 54 14" src="https://user-images.githubusercontent.com/115732734/230771497-f89a6e09-ebcc-45e8-a42a-6acc6e6c7c2e.png">
+
+
+
+## checking for the record with $300000 at the Stage column
+
+<img width="937" alt="Screen Shot 2023-04-09 at 13 55 07" src="https://user-images.githubusercontent.com/115732734/230771503-6b843ce6-6f62-49c3-ad26-aac07717703c.png">
+
+
+
+## correcting the wrong placement of the HeadQuarter and Sector values
+
+<img width="933" alt="Screen Shot 2023-04-09 at 13 56 06" src="https://user-images.githubusercontent.com/115732734/230771513-928bda6a-0819-41d4-8669-b370d313b703.png">
+
+
+## checking for the record with $6000000 at the Stage column
+
+<img width="937" alt="Screen Shot 2023-04-09 at 13 56 57" src="https://user-images.githubusercontent.com/115732734/230771524-f557c0b0-6816-452e-9ed0-78b3c459161e.png">
+
+
+## correcting the wrong placement of the HeadQuarter and Sector values
+
+<img width="934" alt="Screen Shot 2023-04-09 at 13 58 00" src="https://user-images.githubusercontent.com/115732734/230771852-e8caac2e-684f-4eb4-a602-019cbb61027f.png">
+
+
+## checking for the record with $1000000 at the Stage column
+
+<img width="935" alt="Screen Shot 2023-04-09 at 13 58 44" src="https://user-images.githubusercontent.com/115732734/230771790-defbe07a-e6e3-4e81-ab6f-6fbd5d498345.png">
+
+
+## Correcting the wrong placement of the HeadQuarter and Sector values
+
+<img width="937" alt="Screen Shot 2023-04-09 at 14 15 02" src="https://user-images.githubusercontent.com/115732734/230772159-f40fa859-0d48-4dd8-bf2e-928b203fe961.png">
+
+
+# Using .unique()
+
+<img width="936" alt="Screen Shot 2023-04-09 at 14 15 51" src="https://user-images.githubusercontent.com/115732734/230772166-3bff25cd-8f46-4430-9a89-9226d124f98b.png">
+
+
+# Replacing nan with unknown
+
+<img width="936" alt="Screen Shot 2023-04-09 at 14 16 34" src="https://user-images.githubusercontent.com/115732734/230772168-323e39a6-1ba3-4172-9295-0760125ec5f7.png">
+
+
+-----
+
+# Cleaning the Amount($) Column
+
+<img width="934" alt="Screen Shot 2023-04-09 at 14 26 18" src="https://user-images.githubusercontent.com/115732734/230773461-b75ee2a3-a0d6-4baf-a42a-4f767c440b52.png">
+
+
+
+# Using .unique()
+
+Values such as Undisclosed, Series C, Seed,$Undisclosed, $undisclosed, Pre-series A all wrongly entered into the Amount($) column. This will have to be investigated and corrected.
+
+<img width="935" alt="Screen Shot 2023-04-09 at 14 26 56" src="https://user-images.githubusercontent.com/115732734/230773466-e87570f9-2f66-42ba-9794-bdb8aeeb9dc4.png">
+
+
+# Checking for undisclosed in the amount column:
+
+The invetsigation output above revealed that none of the records had the amount wrongly entered in a different column. It is obvious that the amount was not disclosed. Theey are replace with 0.
+
+
+<img width="936" alt="Screen Shot 2023-04-09 at 14 29 14" src="https://user-images.githubusercontent.com/115732734/230773474-32eb1dc8-b56a-4a89-bef0-2aae269b3bda.png">
+
+
+
+# Replacing the Undisclosed with nan
+
+<img width="935" alt="Screen Shot 2023-04-09 at 14 31 14" src="https://user-images.githubusercontent.com/115732734/230773490-952c43f1-980c-478f-932c-2ffcd997f0e1.png">
+
+
+# Checking for $Undisclosed in the amount column:
+
+<img width="935" alt="Screen Shot 2023-04-09 at 14 32 50" src="https://user-images.githubusercontent.com/115732734/230773500-bed0175c-fd23-448b-9a5e-de52cb444c3e.png">
+
+
+# Replacing the $undisclosed with 0
+
+<img width="935" alt="Screen Shot 2023-04-09 at 14 34 04" src="https://user-images.githubusercontent.com/115732734/230773512-d1843dbc-8f1c-461d-b024-873cc068988a.png">
+
+
+# Checking for Series C in the amount column
+
+<img width="937" alt="Screen Shot 2023-04-09 at 14 35 25" src="https://user-images.githubusercontent.com/115732734/230773523-0fe3aba4-2e5b-4e14-ace8-e88596e39f87.png">
+
+
+### correcting the wrong placement of the HeadQuarter and Sector values
+
+<img width="937" alt="Screen Shot 2023-04-09 at 14 37 03" src="https://user-images.githubusercontent.com/115732734/230773536-aa975914-704c-4e85-8177-ecb23256f175.png">
+
+
+
+# checking for Seed in the amount column
+
+The output of the investigation shows that two records were involved with this error. The stage, investor and Amount columns were interchanged. This is corrected in the code below.
+
+<img width="938" alt="Screen Shot 2023-04-09 at 15 05 14" src="https://user-images.githubusercontent.com/115732734/230774343-73b68d6d-aafd-4ca0-8de0-450670b8be38.png">
+
+
+
+### correcting the wrong placement of the HeadQuarter and Sector values
+
+<img width="935" alt="Screen Shot 2023-04-09 at 15 05 47" src="https://user-images.githubusercontent.com/115732734/230774355-a40bfc8c-f135-4730-8466-236474beefad.png">
+
+
+
+# Checking for Pre-series A in the amount column
+
+The invetsor, Amount, and stage columns has been interchanged. The Sector column will be renamed to be consistent with others.
+
+This is correcetd in the code below.
+
+
+<img width="937" alt="Screen Shot 2023-04-09 at 14 42 53" src="https://user-images.githubusercontent.com/115732734/230773874-76a7ae4b-9621-451f-9008-0245ef93b7fe.png">
+
+
+
+### First change the data type to a string to work on the special characters
+
+
+<img width="933" alt="Screen Shot 2023-04-09 at 14 45 00" src="https://user-images.githubusercontent.com/115732734/230773887-ca84cf12-6425-4ca7-88f9-fedb2a4e49af.png">
+
+
+
+# Removing all special characters in the colum
+
+<img width="936" alt="Screen Shot 2023-04-09 at 14 45 29" src="https://user-images.githubusercontent.com/115732734/230773893-1846f947-29d7-4ec4-b896-53152ff1eb31.png">
+
+
+
+# change the data type to a float
+
+<img width="933" alt="Screen Shot 2023-04-09 at 14 46 20" src="https://user-images.githubusercontent.com/115732734/230773904-2b8b223f-add8-4b95-9695-6f7d3a5b89c6.png">
+
+
+# Replacing nan with median
+
+<img width="933" alt="Screen Shot 2023-04-09 at 14 46 54" src="https://user-images.githubusercontent.com/115732734/230773914-e78bff84-a005-403a-beea-9271f1a700c2.png">
+
+<br>
+
+
+# Cleaning the Founders Column
+
+<img width="933" alt="Screen Shot 2023-04-09 at 15 10 11" src="https://user-images.githubusercontent.com/115732734/230775012-a4183592-a14d-4503-9f0b-d35f9b918b76.png">
+
+
+
+# All nan values are to be filled with unknown on the
+
+
+<img width="933" alt="Screen Shot 2023-04-09 at 15 10 50" src="https://user-images.githubusercontent.com/115732734/230775017-d7e6272d-037d-4d6e-8558-b171374bcb3c.png">
+
+
+
+<br>
+
+# Cleaning the Investor Column
+
+
+## All nan values are to be filled with unknown on the
+
+<img width="938" alt="Screen Shot 2023-04-09 at 15 13 06" src="https://user-images.githubusercontent.com/115732734/230775022-528392e1-b4ce-4028-bb99-519270533ee7.png">
+
+
+
+# Checking for duplicate entries
+
+<img width="936" alt="Screen Shot 2023-04-09 at 15 13 48" src="https://user-images.githubusercontent.com/115732734/230775029-2f98bdba-fc1f-4a07-b772-a0d3ab59fef6.png">
+
+
+
+# Remove the duplicate record
+
+
+<img width="935" alt="Screen Shot 2023-04-09 at 15 14 25" src="https://user-images.githubusercontent.com/115732734/230775039-f062ea16-54a5-420d-833f-e647034e7e02.png">
+
+
+
+# Checking for null values
+
+<img width="936" alt="Screen Shot 2023-04-09 at 15 15 02" src="https://user-images.githubusercontent.com/115732734/230775048-2016c968-0ebb-49f3-8148-0209808af06c.png">
+
+
+# Cleaned 2021 data.
 
 
 
