@@ -954,6 +954,35 @@ saving the new dataframe after concatenation in order to have it work on it with
 # dropping unwanted column
 
 
+<img width="933" alt="Screen Shot 2023-04-09 at 17 21 05" src="https://user-images.githubusercontent.com/115732734/230781501-5ebb5ad5-af21-4c1e-9367-6661514a0cf7.png">
+
+<br>
+
+<img width="935" alt="Screen Shot 2023-04-09 at 17 21 56" src="https://user-images.githubusercontent.com/115732734/230781511-3e1b1e6d-15ba-4dcf-ad87-9215a9630c3f.png">
+
+
+# Using dfSummary
+
+This summary output revelas one duplicated entry after merging the four data sets as one. The duplicate has to be dropped. Since the initial 2018 data set did not have the Founders and Investor columns, it has been filled with nan. The cleaned records are identified with Unknown.
+
+
+<img width="936" alt="Screen Shot 2023-04-09 at 17 25 10" src="https://user-images.githubusercontent.com/115732734/230781702-cfd6a759-d957-4092-a7d9-400ba10164c4.png">
+
+
+# Confirming checks for duplicate entries
+
+<img width="935" alt="Screen Shot 2023-04-09 at 17 34 13" src="https://user-images.githubusercontent.com/115732734/230782168-02959144-adfa-4598-bf30-9c31c47a584f.png">
+
+
+
+# Visually Inspecting Missing Data
+
+The heatmap indicate a clustered missing values for the founders and Investors column. This is as a result of the 2018 data set not having values for this field before the data set merge.
+
+
+<img width="937" alt="Screen Shot 2023-04-09 at 17 33 29" src="https://user-images.githubusercontent.com/115732734/230782172-598e056a-c778-4649-94fc-8989bc2f6c95.png">
+
+
 
 
 
