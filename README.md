@@ -373,8 +373,6 @@ Duty is to select all rows where 'Amount' column is in rupees.
 
 
 
------------
-
 
 # Using .info() function
 
@@ -536,7 +534,7 @@ Duty is to select all rows where 'Amount' column is in rupees.
 <img width="935" alt="Screen Shot 2023-04-09 at 03 50 36" src="https://user-images.githubusercontent.com/115732734/230750229-1db2d35f-1334-49cb-9804-622c0248128c.png">
 
 
-------------
+
 
 # Analysis Of The 2021 Data
 
@@ -550,7 +548,7 @@ Duty is to select all rows where 'Amount' column is in rupees.
 
 <img width="1040" alt="Screen Shot 2023-04-09 at 12 20 13" src="https://user-images.githubusercontent.com/115732734/230767443-09a60260-9ff3-4716-a370-ec456a2b67f7.png">
 
------------
+
 
 # Using .info() function
 
@@ -984,12 +982,81 @@ The heatmap indicate a clustered missing values for the founders and Investors c
 
 
 
+# Univariate Analysis
+
+
+## Analysis on The `Amount($)` Column
+
+<img width="937" alt="Screen Shot 2023-04-09 at 17 38 13" src="https://user-images.githubusercontent.com/115732734/230782918-bdf06ed5-78c3-416e-a0b9-c6330d83cd8e.png">
+
+
+# Calculate basic statistical measures
+
+
+<img width="936" alt="Screen Shot 2023-04-09 at 17 46 13" src="https://user-images.githubusercontent.com/115732734/230782927-c1357dc6-eca9-4c8e-a30e-e970bcd6d2bd.png">
+
+
+The above metrics are visually inspected with a box plot below.
+
+<img width="938" alt="Screen Shot 2023-04-09 at 17 48 45" src="https://user-images.githubusercontent.com/115732734/230782938-303f133b-4bb5-452e-860f-59b0f4f03a39.png">
+
+
+# calculate z-scores
+
+<img width="937" alt="Screen Shot 2023-04-09 at 18 00 06" src="https://user-images.githubusercontent.com/115732734/230783449-d806821a-0bb3-4840-b922-6d3da835ae0c.png">
+
+<br>
+
+
+<img width="936" alt="Screen Shot 2023-04-09 at 17 59 06" src="https://user-images.githubusercontent.com/115732734/230783470-04f0f368-d042-4895-a058-60e597a3e8b1.png">
+
+
+# find the indices of the outliers
+
+<img width="935" alt="Screen Shot 2023-04-09 at 18 03 44" src="https://user-images.githubusercontent.com/115732734/230783870-6f88da76-f7d5-4e1a-9598-2fc13a2c154d.png">
+
+<br>
+
+<img width="935" alt="Screen Shot 2023-04-09 at 18 05 39" src="https://user-images.githubusercontent.com/115732734/230783909-f11e9661-a4d5-436c-b56f-5cd6973fc5b2.png">
 
 
 
+# Remove the outliers
+
+<img width="935" alt="Screen Shot 2023-04-09 at 18 06 35" src="https://user-images.githubusercontent.com/115732734/230783945-cd8c6fb7-258f-4a1f-99a3-71ce3f4d7f7e.png">
+
+There seem to be more outliers which has the potential of distorting the mean. The median will however be less affected.
+
+<img width="938" alt="Screen Shot 2023-04-09 at 18 07 54" src="https://user-images.githubusercontent.com/115732734/230783980-ed8e4194-c491-44cd-b8aa-c82b26fe7a04.png">
 
 
 
+# Analysis of the `Stage` Column
+
+<img width="938" alt="Screen Shot 2023-04-09 at 18 21 07" src="https://user-images.githubusercontent.com/115732734/230784717-02b0e3dd-f7db-4fb5-b74f-aaf4e974fe75.png">
+
+The high count of unnknowns is as a result of the 2018 data set. The info above is in percentage terms. This is graphically represented in the graph below.
+
+<img width="935" alt="Screen Shot 2023-04-09 at 18 21 58" src="https://user-images.githubusercontent.com/115732734/230784726-adf89813-176b-4570-86cd-ee194c6eadff.png">
+
+
+
+# Analysis of the Sector Column
+
+The FinTech sector has the highest percentage of 9.2%, followed by Healthcare 6.8% etc. This is also represented graphically below.
+
+<img width="937" alt="Screen Shot 2023-04-09 at 18 22 39" src="https://user-images.githubusercontent.com/115732734/230784735-5ed78549-b049-4ea5-ad96-087f12e21236.png">
+
+
+Since there are about 90 different sectors, it will not be ideal to represent them all on a graph as it will not be visually appeaing, there compromising on undesrtanding. Futher analysis will sort either the top 120 or the least 10 for analysis
+
+<img width="933" alt="Screen Shot 2023-04-09 at 18 23 18 1" src="https://user-images.githubusercontent.com/115732734/230784837-99139344-d0b8-444a-9dc7-91bd6cbcc7a7.png">
+
+
+# Analysis of the Founded Column
+
+
+<img width="938" alt="Screen Shot 2023-04-09 at 18 24 05" src="https://user-images.githubusercontent.com/115732734/230784746-9affd44a-9e9d-4deb-b937-d62a25fcca73.png">
 
 
 
