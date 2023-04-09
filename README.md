@@ -94,12 +94,12 @@ The following is observed about the columns in the data set with respect to the 
 
 <img width="1030" alt="Screen Shot 2023-04-08 at 23 19 48" src="https://user-images.githubusercontent.com/115732734/230743002-0b355401-7b6d-4ccd-95a8-d1cacdec6a89.png">
 
-# To know the total number of rows and columns repectively in the dataset
+### To know the total number of rows and columns repectively in the dataset
 
 <img width="1024" alt="Screen Shot 2023-04-08 at 23 23 53" src="https://user-images.githubusercontent.com/115732734/230743109-6fd29e08-db0e-499b-baa8-6c84d272d327.png">
 
 
-# To invetsigate the datatypes of the available fields or columns
+### To invetsigate the datatypes of the available fields or columns
 
 # Observation:
 
@@ -121,7 +121,7 @@ Initial check indicates there is no null value in the data set.
 
 <img width="1040" alt="Screen Shot 2023-04-08 at 23 33 55" src="https://user-images.githubusercontent.com/115732734/230743435-dd341d9a-8dce-4978-bc63-4ba01e62d2c5.png">
 
-# After carefully examining We note the following from the data shown above:
+### After carefully examining We note the following from the data shown above:
 
 
 **The amount columns include cells with the symbol "-" as well as several currencies.**
@@ -144,7 +144,7 @@ Initial check indicates there is no null value in the data set.
 <img width="1042" alt="Screen Shot 2023-04-08 at 23 38 58" src="https://user-images.githubusercontent.com/115732734/230743602-d1b03ee4-59ef-4f46-ba05-3b368d2645f1.png">
 
 
-### rename the column headings to be consistent with other data set
+### Rename the column headings to be consistent with other data set
 
 <img width="921" alt="Screen Shot 2023-04-08 at 23 41 43" src="https://user-images.githubusercontent.com/115732734/230743698-fb3e3e80-7f51-44df-84f1-59832181a769.png">
 
@@ -245,6 +245,131 @@ Duty is to select all rows where 'Amount' column is in rupees.
 # Cleaned 2018 data.
 
 <img width="942" alt="Screen Shot 2023-04-09 at 00 27 58" src="https://user-images.githubusercontent.com/115732734/230745181-5e2b6af1-07f7-4f9d-a0ce-b91cfe246186.png">
+
+
+
+
+
+<br>
+
+# Analysis Of The 2019 Data.
+
+
+
+### Column names and description: For the year 2019 :
+
+
+
+# 2019 Dataset.
+
+
+<img width="945" alt="Screen Shot 2023-04-09 at 00 50 07" src="https://user-images.githubusercontent.com/115732734/230745773-b0fa2332-5e4b-4bfa-a5b2-4daea420ebed.png">
+
+
+# Using .info() function
+
+
+###### The info() method prints information about the DataFrame. The information contains the number of columns, column labels, column data types, memory usage, range index, and the number of cells in each column (non-null values). 
+
+<img width="1037" alt="Screen Shot 2023-04-09 at 01 07 56 1" src="https://user-images.githubusercontent.com/115732734/230746279-f655b792-1fad-4e9c-8505-dead334b26d5.png">
+
+# To see the names of the columns in the dataset
+
+<img width="1029" alt="Screen Shot 2023-04-09 at 01 09 28" src="https://user-images.githubusercontent.com/115732734/230746281-38162988-2cce-45b9-ab74-2e6bfcd770d6.png">
+
+
+# Using dfSummary()
+
+##### A summary of the entire dataset. To create an organised and thorough summary of a dataframe, use dfsummary:
+
+<img width="1037" alt="Screen Shot 2023-04-09 at 01 19 35 1" src="https://user-images.githubusercontent.com/115732734/230746679-fa1f809e-89df-4aac-bdde-ca14c10fb4fe.png">
+
+
+# Using isnull() Method.
+
+##### The isnull() method returns a DataFrame object where all the values are replaced with a Boolean value True for NULL values, and otherwise False.
+
+<img width="1045" alt="Screen Shot 2023-04-09 at 01 20 32" src="https://user-images.githubusercontent.com/115732734/230746686-8e76a35c-7f46-4c55-a52f-23cfcd0305cb.png">
+
+
+# Deep Dive Into the Data Set :
+
+
+# Cleaning the Founded Column.
+
+
+# convert the data type from float to a string.
+
+
+##### convert the data type from float to a string.
+
+
+<img width="938" alt="Screen Shot 2023-04-09 at 01 33 00" src="https://user-images.githubusercontent.com/115732734/230746848-8bf53dda-4434-4bf0-98ec-644cc7cf9697.png">
+
+<br>
+
+# Cleaning the HeadQuarter Column
+
+<img width="938" alt="Screen Shot 2023-04-09 at 01 35 41" src="https://user-images.githubusercontent.com/115732734/230746915-c40b674d-7763-4ffe-ba04-dda36fd20fc4.png">
+
+
+## Replacing wrongly spelt names and similar names entered differently.
+
+<img width="937" alt="Screen Shot 2023-04-09 at 02 15 07" src="https://user-images.githubusercontent.com/115732734/230747866-3acd3a45-4be0-47d0-a8b5-c6d2bbc317cc.png">
+
+
+# Cleaning the Sector Column.
+
+<img width="1135" alt="Screen Shot 2023-04-09 at 01 38 41" src="https://user-images.githubusercontent.com/115732734/230747099-efe6b544-5ca6-4289-a222-afa66c86890d.png">
+
+
+## Rename similar sectors with wrong or different spelling.
+
+<img width="964" alt="Screen Shot 2023-04-09 at 01 39 31" src="https://user-images.githubusercontent.com/115732734/230747103-5fdef53d-6e46-4bd6-8682-315e3bb12941.png">
+
+
+# Cleaning the Amount($) Column
+
+
+<img width="944" alt="Screen Shot 2023-04-09 at 01 40 13" src="https://user-images.githubusercontent.com/115732734/230747108-34ddae66-60e5-41d7-888a-e376a9d0a1d4.png">
+
+# Change the data type to a float.
+
+
+<img width="945" alt="Screen Shot 2023-04-09 at 01 40 51" src="https://user-images.githubusercontent.com/115732734/230747125-66c32b11-2119-428d-a889-1e8bb148ad1d.png">
+
+
+# Cleaning the Stage Column.
+
+<img width="934" alt="Screen Shot 2023-04-09 at 01 53 54" src="https://user-images.githubusercontent.com/115732734/230747375-4d8e97e8-4358-4985-8bd9-d39caff63b5a.png">
+
+
+# Replacing wrongly spelt and similar enteries.
+
+<img width="934" alt="Screen Shot 2023-04-09 at 01 54 31" src="https://user-images.githubusercontent.com/115732734/230747380-55e66616-7f17-4de1-9aee-11acac692b85.png">
+
+
+# Cleaned 2019 data.
+
+<img width="1031" alt="Screen Shot 2023-04-09 at 01 56 06" src="https://user-images.githubusercontent.com/115732734/230747383-e93ce38a-4733-4c53-84af-a84235eebf59.png">
+
+<br>
+
+
+# Analysis Of The 2020 Data.
+
+
+# Column names and description: For the year 2020 :
+
+
+
+# 2020 Dataset.
+
+
+<img width="1035" alt="Screen Shot 2023-04-09 at 02 00 38" src="https://user-images.githubusercontent.com/115732734/230747498-629fb147-64e1-4ae4-8faf-4c42061577d1.png">
+
+<br>
+<img width="938" alt="Screen Shot 2023-04-09 at 02 01 37" src="https://user-images.githubusercontent.com/115732734/230747504-f02da312-edaa-40e0-b2a3-99135114a3ac.png">
 
 
 
